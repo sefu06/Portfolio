@@ -1,0 +1,17 @@
+.big-text{
+    text-align: left;
+    margin: 0 auto;       /* center block if it has a max-width */
+    max-width: 900px;
+    background-color: #e3e7e0;
+    padding: 20px;
+    font-size: 60px; 
+}
+
+.small-text {
+    text-align: left;
+    margin: 50px auto;       
+    max-width: 900px;
+    background-color: #e3e7e0;
+    padding: 20px;
+    font-size: 20px;
+}

@@ -1,0 +1,118 @@
+/* Navbar container */
+.navbar {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    max-width: 90%;
+    background-color: #84a98c;
+    padding: 12px 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+/* Prevent horizontal scroll on body */
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Ensure all elements respect box-sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Navbar list */
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; /* Changed from center */
+    align-items: center;
+    gap: 20px; /* Reduced gap */
+    flex-wrap: nowrap; /* Prevent wrapping on desktop */
+}
+
+/* Navbar links */
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    cursor: pointer;
+    padding-bottom: 4px;
+    display: inline-block;
+}
+
+/* Hover effect */
+.navbar a:hover {
+    color: #007bff;
+    border-bottom: 2px solid #52796F;
+}
+
+/* Active link */
+.navbar .active {
+    color: #007bff;
+    border-bottom: 2px solid #52796F;
+}
+
+/* Push page content down */
+section {
+    padding: 50px 10px;
+}
+
+/* Tablet adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+        max-width: 95%;
+    }
+    
+    .navbar ul {
+        gap: 20px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 8px 15px;
+        max-width: 100%;      /* fill viewport width */
+        left: 50%;            /* keep centering consistent */
+        transform: translateX(-50%);
+        top: 2%;               /* stick to very top */
+        border-radius: 0;     /* optional: full-width look */
+    }
+    
+    .navbar ul {
+        gap: 8px;             
+        flex-wrap: wrap;       
+        justify-content: center;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 2px 4px;
+        white-space: nowrap;
+    }
+    
+    section {
+        padding: 60px 10px;   /* add extra padding so content isn't hidden under navbar */
+    }
+    body {
+        overflow-x: hidden;
+    }
+}

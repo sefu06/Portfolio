@@ -1,0 +1,22 @@
+
+
+.stars-container {
+    position: absolute;       /* Float on top of other elements */
+    top: 2%;                  /* Relative to viewport height */
+    left: 85%;                /* Center horizontally */
+    transform: translateX(-50%); /* Actually center the container */
+    z-index: 1000;            
+    pointer-events: none;     
+}
+
+.stars-container img {
+    width: 50vw;              /* 50% of viewport width */
+    max-width: 500px;         /* cap the maximum size */
+    height: auto;             /* maintain aspect ratio */
+}
+
+@media (max-width: 768px) {
+    .stars-container {
+        display: none;
+    }
+}

@@ -1,0 +1,71 @@
+.big-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    background-color: #f8f9fa;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.small-text1 {
+    display: block;              /* stays block for margin auto centering */
+    font-size: 20px;
+    text-align: center;
+    margin: 50px auto 150px;      /* 30px bottom margin for spacing */
+    max-width: 900px;
+    background-color: #e3e7e0;
+    padding: 20px;
+}
+
+.Button {
+    display: block;    
+    width: max-content;       /* makes it behave like a button while allowing width/height */
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #354F52;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: none;
+  
+    margin: 30px auto;               /* centers horizontally */
+    text-decoration: none;           /* removes underline */
+    text-align: center;              /* centers text inside the button */
+    transition: all 0.3s ease;       /* smooth hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .Button:hover {
+    background-color: #52796F;       /* slightly lighter/darker on hover */
+  }
+  
+  .Linkedin {
+    font-size: 20px;
+    color: #84a98c;
+    font-size: inherit;
+    display: inline;
+
+  }
+
+  .Linkedin:hover {
+    text-decoration: underline;
+    color: #52796f; /* darker green on hover */
+  }
+
+  .Email{
+    font-size: 20px;
+    color: #84a98c;
+    font-size: inherit;
+    display: inline;
+
+  }
+
+  .Email:hover {
+    text-decoration: underline;
+    color: #52796f; /* darker green on hover */
+  }
+

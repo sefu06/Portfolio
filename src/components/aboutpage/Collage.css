@@ -1,0 +1,123 @@
+.collage {
+    position: relative;  /* important! sets positioning context */
+    width: 100%;
+    height: 3000px;    
+    
+  }
+  
+  .collage img {
+    position: absolute;  /* now top/left will work */
+    border-radius: 0px;
+    border: 10px solid #84a98c;;
+    
+  }
+  
+  /* try moving these around */
+  .collage .img-0 { top: 20px; left: 225px; width: 400px;}
+  .collage .img-1 { top: 350px; left: 200px; width: 400px;}
+  .collage .img-2 { top: 100px; left: 850px; width: 300px;}
+  .collage .img-3 {top: 200px; left: 500px; width: 400px;}
+
+  .collage .img-4 { top: 750px; left: 250px; width: 400px;}
+  .collage .img-5 { top: 900px; left: 75px; width: 300px;}
+  .collage .img-6 { top: 800px; left: 700px; width: 400px;}
+  .collage .img-7 {top: 1000px; left: 400px; width: 400px;}
+  .collage .img-8 {top: 1150px; left: 750px; width: 400px;}
+
+  .collage .img-9 {top: 1550px; left: 575px; width: 400px;}
+  .collage .img-10 {top: 1700px; left: 900px; width: 400px;}
+  .collage .img-11 {top: 1750px; left: 250px; width: 400px;}
+  .collage .img-12 {top: 1925px; left: 600px; width: 400px;}
+
+  .collage .img-13 {top: 2400px; left: 600px; width: 300px;}
+  .collage .img-14 {top: 2400px; left: 200px; width: 300px;}
+  .collage .img-15 {top: 2400px; left: 1000px; width: 300px;}
+
+
+
+
+
+  .floating-text {
+    position: absolute; /* allows free movement */
+    top: 45px;          /* distance from top of collage */
+    left: 925px;        /* distance from left of collage */
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 25px;
+    color: #2f3e46;
+}
+
+.dog {
+    position: absolute; /* allows free movement */
+    top: 700px;          /* distance from top of collage */
+    left: 300px;        /* distance from left of collage */
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 25px;
+    color: #2f3e46;
+}
+
+
+.food {
+    position: absolute; /* allows free movement */
+    top: 1700px;          /* distance from top of collage */
+    left: 250px;        /* distance from left of collage */
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 25px;
+    color: #2f3e46;
+}
+
+
+.lifeatubc {
+    position: absolute; /* allows free movement */
+    top: 2350px;          /* distance from top of collage */
+    left: 675px;        /* distance from left of collage */
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 25px;
+    color: #2f3e46;
+}
+
+
+@media (max-width: 768px) {
+    .collage {
+        height: auto;
+        padding: 20px 10px;
+    }
+    
+    .collage img {
+        position: relative;
+        left: 50% !important;
+        transform: translateX(-50%);
+        width: 90% !important;
+        max-width: 350px !important;
+        margin-bottom: 30px;
+        display: block;
+    }
+    
+    /* Stack images vertically */
+    .collage .img-0 { top: 0; }
+    .collage .img-1 { top: 0; }
+    .collage .img-2 { top: 0; }
+    .collage .img-3 { top: 0; }
+    .collage .img-4 { top: 0; }
+    .collage .img-5 { top: 0; }
+    .collage .img-6 { top: 0; }
+    .collage .img-7 { top: 0; }
+    .collage .img-8 { top: 0; }
+    .collage .img-9 { top: 0; }
+    .collage .img-10 { top: 0; }
+    .collage .img-11 { top: 0; }
+    .collage .img-12 { top: 0; }
+    .collage .img-13 { top: 0; }
+    .collage .img-14 { top: 0; }
+    .collage .img-15 { top: 0; }
+    
+    .floating-text,
+    .dog,
+    .food,
+    .lifeatubc {
+        display: none;
+    }
+}

@@ -1,0 +1,18 @@
+.mouse-container {
+    position: absolute; /* Allows it to float on top of other elements */
+    top: 5px;          /* Adjust vertical position */
+    left: 30px;        /* Adjust horizontal position */
+    z-index: 1000;      /* Ensures it sits above other elements */
+    pointer-events: none; /* So clicks pass through it if needed */
+}
+
+.mouse-container img {
+    width: 600px;        /* Adjust size */
+    height: 900px;
+}
+
+@media (max-width: 768px) {
+    .mouse-container {
+        display: none;
+    }
+}

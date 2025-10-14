@@ -1,0 +1,28 @@
+.major-container {
+    position: absolute; /* Allows it to float on top of other elements */
+    top: 410px;          /* Adjust vertical position */
+    left: 975px;        /* Adjust horizontal position */
+    z-index: 1000;      /* Ensures it sits above other elements */
+    pointer-events: none; /* So clicks pass through it if needed */
+}
+
+.major-container img {
+    width: 500px;        /* Adjust size */
+    height: 500px;
+}
+
+@media (max-width: 768px) {
+    .major-container {
+        top: 12%;       /* adjust vertical placement for smaller screens */
+        left: 53%;      /* keep it centered */
+        transform: translateX(-50%);
+    
+    }
+
+    .major-container img {
+        width: 60vw;    /* scale relative to viewport width */
+        height: auto;
+        max-width: 300px; /* prevent it from getting too large on small screens */
+       
+    }
+}

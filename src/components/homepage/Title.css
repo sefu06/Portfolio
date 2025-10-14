@@ -1,0 +1,83 @@
+/* Title section - full viewport height, centered content */
+.Title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e3e7e0;
+    text-align: center;
+    margin: 0;
+    padding: 50px 0;
+}
+
+/* Introduction paragraph styling */
+.intro {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #333;
+    max-width: 600px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Name styling - prominent and bold */
+.name {
+    font-weight: bold;
+    font-size: 3rem;
+    color: #000;
+    margin: 0;
+}
+
+/* Base highlight styling */
+.highlight {
+    font-weight: 600;
+}
+
+/* Product highlight - blue color */
+.highlight.product {
+    color: #007bff;
+}
+
+/* Curious highlight - green color */
+.highlight.curious {
+    color: #28a745;
+}
+
+/* Box behind the text */
+.title-box {    
+    
+    background-color: #CAD2C5;     /* soft beige */
+    padding: 50px 10%;           /* less internal spacing */
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+    display: flex;                 /* make box a flex container */
+    flex-direction: column;        /* stack content vertically */
+    align-items: center;           /* center horizontally */
+    justify-content: center;       /* center vertically */
+
+    min-height: 450px; 
+    min-width: 800px;            /* keeps box visually large */
+    text-align: center;            /* ensures text is centered */
+    
+}
+
+@media (max-width: 768px) {
+    .title-box {
+        min-width: 0;           /* allow box to shrink to fit screen */
+        width: 90%;             /* take up most of the viewport width */
+        padding: 40px 5%;       /* reduce padding on mobile */
+        height: 100%;
+    
+    }
+
+    .name {
+        font-size: 2rem;        /* scale down text */
+    }
+
+    .intro {
+        font-size: 1.2rem;      /* scale down intro paragraph */
+        max-width: 90%;         /* fit mobile screen */
+    }
+
+    
+}
