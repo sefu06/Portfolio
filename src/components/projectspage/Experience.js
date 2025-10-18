@@ -34,7 +34,9 @@ export default function Experience() {
             </div>
 
             <div className="Project">
-                <img src={rex} alt="REX Project" />
+                <Link to="/projects/REX" className="Project_description">
+                    <img src={rex} alt="REX Project" />
+                </Link>
                 <div className="project-text">
                     <span className="name">Undergraduate Research Experience Program, 2024-2025</span>
                     <br></br>
@@ -47,7 +49,9 @@ export default function Experience() {
             </div>
 
             <div className="Project">
-                <img src={fitnesstracker} alt="Fitness Tracker App" />
+                <Link to="/projects/fitnessproject" className="Project_description"><
+                    img src={fitnesstracker} alt="Fitness Tracker App" />
+                </Link>
                 <div className="project-text">
                     <span className="name">Fitness Tracker App </span>
                     <br></br>

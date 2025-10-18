@@ -1,6 +1,8 @@
 import { useState } from "react";
 import ANDbox from "../images/ANDbox.png";
 import "./BiomodProject.css";
+import PDMSmold from "../images/PDMSmold.png"
+import molddIRL from "../images/mold in real life.webp"
 
 function DropdownSection({ title, children }) {
     const [open, setOpen] = useState(false);
@@ -48,7 +50,8 @@ export default function BiomodProject() {
                     was directly used in experiments which will be presents and the 2025 competition.
 
                 </p>
-                <img src={ANDbox} alt = "ANDbox dropbox" />
+                <img src={PDMSmold}  />
+                <img src={molddIRL}  />
             </DropdownSection>
         </div>
     );

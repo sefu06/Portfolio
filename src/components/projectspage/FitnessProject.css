@@ -1,0 +1,35 @@
+.project-video {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+
+.details {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #52796F;
+    max-width: 900px;
+    text-align: left;
+    margin: 0 auto 1.5em;
+    padding: 1rem;
+
+}
+
+.link{
+    font-size: 20px;
+    color: #84a98c;
+    font-size: inherit;
+    display: inline;
+
+  }
+
+  .link:hover {
+    text-decoration: underline;
+    color: #52796f; /* darker green on hover */
+  }
+
