@@ -25,7 +25,7 @@ export default function BiomodProject() {
             <h1>BIOMOD</h1>
             <p>
                 BIOMOD is a UBC engineering design team which specializes in Biomolecular Design.
-                Every year, we attend the annual BIOMOD Jamboree, an international competition where
+                This year, I am a part of the BIOMOD Competition team, where myself along with 7 other members plan to compete in the annual BIOMOD Jamboree, an international competition where
                 universities around the world present their projects and research. As a computational team
                 member, my responsibilities include 3D modelling, numerical analysis, CADNano simulations, and much more.
                 Our 2025 project topic is: Creating a Cell-Free System for Carbonic Anhydrase protein synthesis.
@@ -33,14 +33,13 @@ export default function BiomodProject() {
             </p>
 
             <DropdownSection title="Image Analysis (Fall 2025)">
-                <p>In Progress... Coming soon</p>
+                <p>Worked on a series of labs, that taught the basics of image analysis. We used numpy, OpenCV, and matplotlib to explore 
+                    various different image analysis techniques such as Gaussian Blur and Sobel Edge Detection to modify images in different ways.
+                    To confirm changes in the modified images, grayscale histograms, which shows the pixel intensity distributions were created. To see
+                    all the labs that were done, with annotated notes, check out my github!
+                </p>
             </DropdownSection>
 
-            <DropdownSection title="TreeSAP Cost Analysis (Summer 2025)">
-                <p>Cost analysis using trees is a method in algorithm design that helps us measure the efficiency of operations performed
-                    on tree-based data structures (such as binary search trees, heaps, AVL trees, or red–black trees).
-                    The goal is to understand not just the cost of a single operation, but the overall performance across a sequence of operations.</p>
-            </DropdownSection>
 
             <DropdownSection title="PDMS Mold Design (Spring 2025)">
                 <p>I designed a PDMS (silicon) mold to for the wetlab team to form p-gels.

@@ -85,6 +85,28 @@ transition: color 0.3s ease, transform 0.3s ease;
     
 }
 
+.social-icons {
+    margin-top: 40px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* Image icons */
+.icon {
+    width: 48px;
+    height: 48px;
+    transition: transform 0.25s ease, filter 0.25s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Hover effect */
+.icon:hover {
+    transform: scale(1.12);
+    filter: brightness(1.15);
+}
+
 @media (max-width: 768px) {
     .title-box {
         min-width: 0;           /* allow box to shrink to fit screen */
