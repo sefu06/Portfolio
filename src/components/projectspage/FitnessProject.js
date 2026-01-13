@@ -1,18 +1,19 @@
+
 import DemoVideo from "../images/demo.mov";
 import "./FitnessProject.css"
 
 export default function FitnessProject() {
     return (
         <div className="wholepage">
-        <div className="video-container">
-            <video
-                src={DemoVideo}
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="project-video"
-            />
+            <div className="video-container">
+                <video
+                    src={DemoVideo}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="project-video"
+                />
             </div>
             <p className="details">
                 This Fitness Tracker app is a Java-based desktop application
@@ -29,9 +30,9 @@ export default function FitnessProject() {
                 <br></br>
                 <br></br>
                 There is a demo showing some of the functionalities above, but the complete
-                code can be found on my <a href= "https://github.com/sefu06" className="link">github</a>!
+                code can be found on my <a href="https://github.com/sefu06" className="link">github</a>!
             </p>
         </div>
-        
+
     );
 }

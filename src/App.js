@@ -14,6 +14,7 @@ import Collage from "./components/aboutpage/Collage";
 import BiomodProject from "./components/projectspage/BiomodProject";
 import RexProject from "./components/projectspage/RexProject";
 import FitnessProject from "./components/projectspage/FitnessProject";
+import SustainABite from './components/projectspage/SustainABite';
 import Layout from "./Layout";
 
 function HomePage() {
@@ -72,6 +73,7 @@ function App() {
                 <Routes>
                     {/* ✅ Use HomePage component */}
                     <Route path="/" element={<HomePage />} />
+                    <Route path="/projects/sustainabite" element={<SustainABite/>}></Route>
 
                     <Route path="/projects/biomod" element={<BiomodProject />} />
                     <Route path="/projects/rex" element={<RexProject />} />

@@ -1,0 +1,52 @@
+/* Page wrapper – mirrors .WholeProject */
+.sustainabite-page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Title behaves like .title-section */
+.project-title {
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 1000px;
+}
+
+/* Side-by-side layout */
+.content-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Video sizing */
+.project-video {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 12px;
+}
+
+/* Text block */
+.details {
+    max-width: 500px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 900px) {
+    .content-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .details {
+        max-width: 700px;
+    }
+}

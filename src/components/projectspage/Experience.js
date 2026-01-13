@@ -4,11 +4,35 @@ import { Link } from "react-router-dom";
 import biomod from "../images/biomod.png";
 import rex from "../images/REXPoster.png";
 import fitnesstracker from "../images/fitnesstracker.png"
+import sustainabiteLogin from "../images/sustainabite_login.jpg"
 
 export default function Experience() {
     return (
         <section className="Projects">
             <h1 className="Projects-title">Projects/Experience</h1>
+
+            <div className="Project">
+                <Link to="/projects/sustainabite" className='Project_description'>
+                    <img src={sustainabiteLogin} alt="SustainaBite"></img>
+                </Link>
+
+                <div className="project-text">
+                    <span className="name">SustainABite, January 2026 </span>
+                    <br></br>
+
+                    <Link to="/projects/sustainabite" className="Project_description">
+                        Combatting Food Surplus One Connection at a Time
+                    </Link>
+
+                    <br></br>
+                    <div className='Skills'>
+                        <p>React / javascript / Firebase</p>
+                    </div>
+
+
+                </div>
+
+            </div>
 
             <div className="Project">
                 <Link to="/projects/biomod" className="Project_description">

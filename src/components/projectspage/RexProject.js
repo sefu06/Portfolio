@@ -13,7 +13,7 @@ export default function RexProject() {
                 className="project-image"
             />
 
-            {/* ✅ Fixed: class → className */}
+         
             <div className="project-description">
                 <p>
                     Worked with a graduate statistics student to perform single-cell RNA sequencing using the
